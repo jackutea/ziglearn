@@ -1,1 +1,1 @@
-.\zig-out\bin\main.exe
+zig build run --summary all
