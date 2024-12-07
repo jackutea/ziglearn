@@ -5,7 +5,7 @@ pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
 
     // ==== Lib - raylib ====
-    const raylib_dep = b.dependency("raylib-zig", .{
+    const raylib_dep: *std.Build.Dependency = b.dependency("raylib-zig", .{
         .target = target,
         .optimize = optimize,
     });
